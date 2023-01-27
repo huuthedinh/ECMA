@@ -1,10 +1,12 @@
 const Nav = () => {
-    return ` <nav>
- <a href="/">Home</a>
- <a href="/about">About</a>
- <a href="/project">Projects</a>
-
-</nav>`;
-
+    return `
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/projects">Projects</a>
+            <a href="/posts">Posts</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    `
 };
-export default Nav
+export default Nav;
