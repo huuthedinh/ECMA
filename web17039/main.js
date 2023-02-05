@@ -8,16 +8,19 @@ import Homepage from "./pages/home";
 import NotFoundPage from "./pages/not-found";
 import PostsPage from "./pages/posts";
 import ProjectsPage from "./pages/projects";
-
+import AdminAddProjectsPage from "./pages/admin/projects-add";
+import AdminEditProjectsPage from "./pages/admin/projects-edit";
 
 
 router.on("/", () => render(Homepage, app));
 router.on("/about", () => render(AboutPage, app));
 router.on("/contact", () => render(ContactPage, app));
 router.on("/projects", () => render(ProjectsPage, app));
-router.on("/project/:id", (params) => render(() => DetailProjectPage(params), app));
+router.on("/project/:id", ({ data }) => render(() => () => DetailProjectPage(data), app));
 router.on("/posts", () => render(PostsPage, app));
 router.on("/admin/projects", () => render(AdminProjectPage, app));
+router.on("/admin/projects/add", () => render(AdminAddProjectsPage, app));
+router.on("/admin/projects/:id/edit", ({ data }) => render(() => AdminEditProjectsPage(data), app));
 router.notFound(() => render(NotFoundPage, app));
 
 router.resolve();

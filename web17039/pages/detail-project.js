@@ -4,7 +4,7 @@ import ProjectInfo from "../components/ProjectInfo";
 import { projects } from "../data";
 import { router } from "../lib";
 
-const DetailProjectPage = ({ data: { id } }) => {
+const DetailProjectPage = ({ id }) => {
     // find
     // /project/:id
     const currentProject = projects.find((project) => project.id == id);
