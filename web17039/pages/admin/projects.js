@@ -1,16 +1,23 @@
-import { projects } from "../../data";
+
 import { useEffect, useState } from "../../lib";
 const AdminProjectPage = () => {
-    const [data, setData] = useState(projects);
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        const projects = JSON.parse(localStorage.getItem("projects")) || [];
+        setData(projects);
+    }, []);
 
     useEffect(() => {
         const btns = document.querySelectorAll(".btn-remove");
         for (let btn of btns) {
-            const id = btn.dataset.id;
+
             btn.addEventListener("click", function () {
-                const newdata = data.filter((projects) => projects.id != id);
-                setData(newdata)
-                console.log(id);
+                const id = btn.dataset.id;
+                const newProjects = data.filter((project) => project.id != id);
+                localStorage.setItem("projects", JSON.stringify(newProjects));
+                setData(newProjects);
+
             });
         }
     });

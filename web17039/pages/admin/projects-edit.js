@@ -1,7 +1,8 @@
 import { useEffect, router } from "../../lib";
-import { projects } from "../../data";
+
 
 const AdminEditProjectPage = ({ id }) => {
+    const projects = JSON.parse(localStorage.getItem("projects")) || [];
     const currentProject = projects.find((project) => project.id == id);
     useEffect(() => {
         const form = document.getElementById("form-add");
@@ -17,6 +18,7 @@ const AdminEditProjectPage = ({ id }) => {
             const newProjects = projects.map((project) => {
                 return project.id == newProject.id ? newProject : project;
             });
+            localStorage.setItem("projects", JSON.stringify(newProjects))
 
             router.navigate("/admin/projects");
         });
