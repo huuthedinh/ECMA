@@ -1,11 +1,13 @@
 
 import { useEffect, useState } from "../../lib";
 const AdminProjectPage = () => {
-    const [data, setData] = useState([]);
+    const [project, setProjects] = useState([]);
 
     useEffect(() => {
-        const projects = JSON.parse(localStorage.getItem("projects")) || [];
-        setData(projects);
+        fetch("https://localhost:3000/projects", {
+        })
+            .then((response) => response.json())
+            .then(({ data }) => setProjects(data));
     }, []);
 
     useEffect(() => {
@@ -14,9 +16,14 @@ const AdminProjectPage = () => {
 
             btn.addEventListener("click", function () {
                 const id = btn.dataset.id;
-                const newProjects = data.filter((project) => project.id != id);
-                localStorage.setItem("projects", JSON.stringify(newProjects));
-                setData(newProjects);
+                fetch(`http://localhost:3000/projects/${id}`, {
+                    method: "DELETE",
+                }).then(() => {
+                    // Lọc ra các phần tử có id khác với id của button
+                    const newProjects = projects.filter((project) => project.id != id);
+                    // Gán lại giá trị cho biến data
+                    setProjects(newProjects);
+                });
 
             });
         }
@@ -32,7 +39,7 @@ const AdminProjectPage = () => {
          </tr>
      </thead>
      <tbody>
-         ${data
+         ${project
             .map((project, index) => {
                 return `
                  <tr>

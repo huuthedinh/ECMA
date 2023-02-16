@@ -9,21 +9,21 @@ const AdminEditProjectPage = ({ id }) => {
         const projectName = document.getElementById("project-name");
         form.addEventListener("submit", function (e) {
             e.preventDefault();
-            const newProject = {
+            const formData = {
                 id: currentProject.id,
                 name: projectName.value,
             };
 
 
             const newProjects = projects.map((project) => {
-                return project.id == newProject.id ? newProject : project;
+                return project.id == formData.id ? formData : project;
             });
             localStorage.setItem("projects", JSON.stringify(newProjects))
 
             router.navigate("/admin/projects");
         });
     });
-    if (!currentProject) return null;
+
 
     return `<div class="container">
             <h1>Thêm sản phẩm</h1>

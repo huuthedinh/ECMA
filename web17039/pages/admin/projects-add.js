@@ -2,7 +2,6 @@ import { useEffect, router } from "../../lib"
 
 
 const AdminAddProjectsPage = () => {
-    const projects = JSON.parse(localStorage.getItem("projects")) || [];
     useEffect(() => {
         const form = document.getElementById("form-add");
         const projectName = document.getElementById("project-name");
@@ -11,11 +10,17 @@ const AdminAddProjectsPage = () => {
             // chặn sự kiện reload sau khi submit
             e.preventDefault();
             // Thêm phần tử vào mảng projects
-            projects.push({ id: projects.length + 1, name: projectName.value })
-            //Lưu vào storage
-            localStorage.setItem("projects", JSON.stringify(projects));
-            // chuyển huwongsbveef trang admin
-            router.navigate("/admin/projects");
+            const formData = {
+                name: projectName.value,
+            };
+            fetch("http://localhost:3000/projects", {
+                method: "POST",
+                headers: {
+                    "Conten_Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+
+            }).then(() => router.navigate("/admin/projects"))
         });
 
 
