@@ -10,14 +10,13 @@ import "../components/style.css"
 
 const Homepage = () => {
     return `
-   
     ${avata()}
     ${header()}
     ${infor()}
     ${intro()}
     ${experience()}
     ${skill()}
-  
+
     `
 }
 
