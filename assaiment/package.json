@@ -1,5 +1,5 @@
 {
-  "name": "asm",
+  "name": "assaiment",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,6 +12,7 @@
     "vite": "^4.1.0"
   },
   "dependencies": {
+    "bootstrap": "^5.2.3",
     "navigo": "^8.11.1"
   }
 }

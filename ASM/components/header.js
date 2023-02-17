@@ -1,8 +1,11 @@
 
-const header = () => {
-    return (
-        ` <div>header</div>`
-    )
-}
+import nav from "./nav";
 
-export default header
+const header = () => {
+    return /*html*/ `
+        <header>
+         ${nav()}
+        </header>
+    `;
+};
+export default header;
