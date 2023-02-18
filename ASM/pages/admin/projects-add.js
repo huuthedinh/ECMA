@@ -1,5 +1,7 @@
 import { useEffect, router } from "../../lib"
 
+import header from "../../components/header";
+
 
 const AdminAddProjectsPage = () => {
     useEffect(() => {
@@ -16,7 +18,7 @@ const AdminAddProjectsPage = () => {
             fetch("http://localhost:3000/projects", {
                 method: "POST",
                 headers: {
-                    "Conten_Type": "application/json",
+                    "Content-Type": "application/json",
                 },
                 body: JSON.stringify(formData),
 
@@ -25,7 +27,8 @@ const AdminAddProjectsPage = () => {
 
 
     });
-    return `<div class ="container">
+    return /*html*/ `<div class ="container">
+    ${header()}
     <h1>Thêm Sản Phẩm</h1>
     <form action="" id="form-add">
       <div class="form-group">
