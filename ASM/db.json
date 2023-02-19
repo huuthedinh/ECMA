@@ -2,21 +2,21 @@
   "projects": [
     {
       "name": "Dự án 1 ",
-      "des": "Dự án web bán hàng 2",
+      "des": "Dự án web bán hàng",
       "text": "html ,css ,js,notejs",
+      "img": [
+        "https://res.cloudinary.com/dvg4a5rbv/image/upload/v1676818232/ECMA/mefn8pux12xmxaco5yas.png"
+      ],
       "id": 1
     },
     {
       "name": "Dự án 2",
       "des": "Dự án web bán bất động sản",
-      "text": "html ,css ,js,notejs",
-      "id": 2
-    },
-    {
-      "name": "Dự án 3",
-      "des": "Dự án web bán mỹ phẩm",
       "text": "html ,css ,js,notejs,bootstrap",
-      "id": 3
+      "img": [
+        "https://res.cloudinary.com/dvg4a5rbv/image/upload/v1676818248/ECMA/ncusf2fiw41ya95gupoi.png"
+      ],
+      "id": 2
     }
   ]
 }
