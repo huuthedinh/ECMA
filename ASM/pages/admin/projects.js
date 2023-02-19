@@ -37,6 +37,9 @@ const AdminProjectPage = () => {
          <tr>
              <th>#</th>
              <th>Name</th>
+             <th>Des</th>
+             <th>Text</th>
+             <th>Img</th>
              <th></th>
          </tr>
      </thead>
@@ -47,9 +50,15 @@ const AdminProjectPage = () => {
                  <tr>
                      <td>${index + 1}</td>
                      <td>${project.name}</td>
+                     <td>${project.des}</td>
+                     <td>${project.text}</td>
+                     <td>${project.img}</td>
+                     
                      <td width="150">
                      <button class="btn btn-remove btn-danger" data-id = "${project.id}">Xóa</button>
                      <a href="/admin/projects/${project.id}/edit "class="btn btn-remove btn-danger">Sửa</a>
+                    
+
                      
                  </tr> 
              `;
@@ -60,4 +69,3 @@ const AdminProjectPage = () => {
 </div>`;
 };
 export default AdminProjectPage;
-

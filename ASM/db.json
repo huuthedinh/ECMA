@@ -1,19 +1,22 @@
 {
-  "posts": [
+  "projects": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "Dự án 1 ",
+      "des": "Dự án web bán hàng 2",
+      "text": "html ,css ,js,notejs",
+      "id": 1
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "Dự án 2",
+      "des": "Dự án web bán bất động sản",
+      "text": "html ,css ,js,notejs",
+      "id": 2
+    },
+    {
+      "name": "Dự án 3",
+      "des": "Dự án web bán mỹ phẩm",
+      "text": "html ,css ,js,notejs,bootstrap",
+      "id": 3
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
