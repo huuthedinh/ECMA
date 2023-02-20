@@ -1,7 +1,7 @@
 
 
 const intro = () => {
-    return /*html*/ `
+  return /*html*/ `
   <div class="intro">
             <h2>INTRODUCE MYSELT</h2>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eligendi omnis quasi dolores modi eius aliquam

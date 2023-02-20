@@ -5,6 +5,8 @@ import intro from "../components/intro"
 import experience from "../components/experience"
 import skill from "../components/skill"
 import "../components/style.css"
+import footer from "../components/footer"
+
 
 
 
@@ -16,6 +18,7 @@ const Homepage = () => {
     ${intro()}
     ${experience()}
     ${skill()}
+    ${footer()}
 
     `
 }

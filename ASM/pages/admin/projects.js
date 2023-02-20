@@ -52,14 +52,11 @@ const AdminProjectPage = () => {
                      <td>${project.name}</td>
                      <td>${project.des}</td>
                      <td>${project.text}</td>
-                     <td>${project.img}</td>
+                     <td>  <img src="${project.img}" width='150px'></td>
                      
                      <td width="150">
                      <button class="btn btn-remove btn-danger" data-id = "${project.id}">Xóa</button>
                      <a href="/admin/projects/${project.id}/edit "class="btn btn-remove btn-danger">Sửa</a>
-                    
-
-                     
                  </tr> 
              `;
       })

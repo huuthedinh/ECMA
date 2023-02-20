@@ -19,12 +19,10 @@ const AdminEditProjectPage = ({ id }) => {
         form.addEventListener("submit", function (e) {
             e.preventDefault();
             const formData = {
-
                 name: projectName.value,
                 des: projectdes.value,
                 text: projecttext.value,
-
-
+                img: urls,
             };
             fetch(`http://localhost:3000/projects/${id}`, {
                 method: "PUT",

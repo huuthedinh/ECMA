@@ -1,11 +1,9 @@
 
 
 const skill = () => {
-  return /*html*/ `
+    return /*html*/ `
   <div class="skills">
-                <h2 >
-                    SKILLS
-                </h2>
+                <h2 >SKILLS</h2>
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>

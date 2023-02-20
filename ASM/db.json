@@ -1,22 +1,22 @@
 {
   "projects": [
     {
-      "name": "Dự án 1 ",
-      "des": "Dự án web bán hàng",
-      "text": "html ,css ,js,notejs",
+      "name": "Dự án 3",
+      "des": "Dự án web bán bất động sản",
+      "text": "html ,css ,js",
       "img": [
-        "https://res.cloudinary.com/dvg4a5rbv/image/upload/v1676818232/ECMA/mefn8pux12xmxaco5yas.png"
+        "https://res.cloudinary.com/dvg4a5rbv/image/upload/v1676861252/ECMA/bkmhcnolozy8q6tzwpdj.webp"
       ],
-      "id": 1
+      "id": 3
     },
     {
-      "name": "Dự án 2",
-      "des": "Dự án web bán bất động sản",
-      "text": "html ,css ,js,notejs,bootstrap",
+      "name": "Dự án 3",
+      "des": "Dự án web bán hàng 2",
+      "text": "html ,css ,js,notejs,",
       "img": [
-        "https://res.cloudinary.com/dvg4a5rbv/image/upload/v1676818248/ECMA/ncusf2fiw41ya95gupoi.png"
+        "https://res.cloudinary.com/dvg4a5rbv/image/upload/v1676864033/ECMA/spzls3hh89u1pviud26u.jpg"
       ],
-      "id": 2
+      "id": 4
     }
   ]
 }
