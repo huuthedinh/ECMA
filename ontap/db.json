@@ -1,0 +1,23 @@
+{
+  "products": [
+    {
+      "name": "dự án abc",
+      "des": "dự án bán mĩ phẩm24",
+      "price": "2389802424",
+      "img": [
+        "https://res.cloudinary.com/dvg4a5rbv/image/upload/v1677774290/ECMA/qzis3fvp8ytawcxgqn4p.png"
+      ],
+      "id": 5
+    },
+    {
+      "name": "dự án 1abc",
+      "des": "dự án bán mĩ phẩm12",
+      "price": "2003",
+      "img": [
+        "https://res.cloudinary.com/dvg4a5rbv/image/upload/v1677773406/ECMA/rbg8up6vnkci0lrqt2k3.jpg"
+      ],
+      "id": 6
+    }
+  ],
+  "users": []
+}
